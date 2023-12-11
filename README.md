@@ -26,6 +26,7 @@ Suited for applications with server-rendered pages and traditional web browser i
 Stateful:
 
 The server maintains the user's session state.
+
 2  ..Laravel Sanctum:
 
 Use Case: 
