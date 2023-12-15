@@ -39,3 +39,7 @@ Route::middleware('auth:sanctum')->group(function () {
 //must be login, at that time the token is create and send to the browser
 //the user don`t see the bookes before add to the postman or in browser
 Route::post('/token', [AuthController::class, 'login']);
+
+// Route::get('/getuseId', [ AuthController::class, 'getUserId']);
+// to get the user id only
+Route::middleware('auth:sanctum')->get('/get-user-id', [AuthController::class,'getUserId']);
